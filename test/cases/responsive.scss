@@ -1,5 +1,5 @@
 @import "sop-sass/responsive";
 
 .img-responsive {
-  @extend %img-responsive;
+  @include img-responsive;
 }
