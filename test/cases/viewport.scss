@@ -1,0 +1,9 @@
+@import 'sop-sass/viewport';
+
+.foo{
+  @include viewport-filled();
+}
+
+.bar {
+  @include viewport-fitted();
+}

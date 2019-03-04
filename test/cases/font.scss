@@ -1,0 +1,21 @@
+@import "sop-sass/font";
+
+foo {
+  @include font-specs(14, 1.8, 100);
+}
+
+foo-sketch-tracking {
+  @include font-specs(14, 1.8, 91px);
+}
+
+foo-auto {
+  @include font-specs(16, auto, 0);
+}
+
+foo-smooth {
+  @include font-specs(16, 1.2, 100, true);
+}
+
+foo-important-override {
+  @include font-specs(16, 1.2, 100, false, !important);
+}

@@ -1,0 +1,9 @@
+@import "sop-sass/sr";
+
+.sr-only {
+  @include sop-sr-only;
+}
+
+.sr-only-focusable{
+  @include sop-sr-only-focusable;
+}

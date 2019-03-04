@@ -1,0 +1,14 @@
+@import '../../lib/sop-sass/fontello';
+
+@include setup-font-face('foo');
+
+@include setup-font-face('bar', '/build/', 'bar-file');
+
+.icon:before,
+.animate-icon:before {
+  @include fontello-icon();
+}
+
+.animate-icon:before {
+  @include fontello-icon-animate;
+}

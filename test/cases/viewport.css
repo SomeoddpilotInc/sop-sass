@@ -1,0 +1,23 @@
+.foo {
+  width: 100vw;
+  height: auto;
+}
+
+@media (max-aspect-ratio: 1) {
+  .foo {
+    width: auto;
+    height: 100vh;
+  }
+}
+
+.bar {
+  height: 100vh;
+  width: auto;
+}
+
+@media (max-aspect-ratio: 1) {
+  .bar {
+    height: auto;
+    width: 100vw;
+  }
+}

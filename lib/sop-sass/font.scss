@@ -1,0 +1,29 @@
+$base-font-size: 14;
+
+@mixin font-specs($size, $leading: null, $tracking: null, $smoothed: false, $important: null) {
+  font-size: $size / $base-font-size + em $important;
+  @if $size == 0 and $leading == 0 {
+    line-height: 0 $important;
+  }
+  @if $leading != null {
+    @if $leading == auto or $leading == 1.2em or $leading == 120% {
+      line-height: 1.2em $important;
+    } @else {
+      line-height: $leading / $size + em $important;
+    }
+  }
+  @if $tracking != null {
+    @if $tracking == 0 {
+      letter-spacing: 0 $important;
+    } @else {
+      @if unit($tracking) == 'px' {
+        letter-spacing: ($tracking / ($tracking * 0 + 1)) / $size + em $important;
+      } @else {
+        letter-spacing: $tracking / 1000 + em $important;
+      }
+    }
+  }
+  @if $smoothed == 'smooth' or $smoothed == true {
+    font-smoothing: antialiased;
+  }
+}
