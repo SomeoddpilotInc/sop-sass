@@ -1,11 +1,11 @@
-sop-styl
+sop-sass
 ========
 
 [![Build Status](https://travis-ci.org/SomeoddpilotInc/sop-sass.svg?branch=master)](https://travis-ci.org/SomeoddpilotInc/sop-sass)
 [![Dependency Status](https://david-dm.org/SomeoddpilotInc/sop-sass.svg)](https://david-dm.org/SomeoddpilotInc/sop-sass)
 [![devDependency Status](https://david-dm.org/SomeoddpilotInc/sop-sass/dev-status.svg)](https://david-dm.org/SomeoddpilotInc/sop-sass#info=devDependencies)
 
-Someoddpilot's base Sasss framework
+Someoddpilot's base Sass framework
 
 Borrowed liberally from [Bootstrap](http://getbootstrap.com) and [Nib](https://github.com/tj/nib)
 
@@ -13,7 +13,7 @@ Borrowed liberally from [Bootstrap](http://getbootstrap.com) and [Nib](https://g
 
 A convenient way to make embeds responsive. Supports `16by9` and `4by3`.
 
-```stylus
+```sass
 .embed-container {
   embed-responsive(16, 9);
 }
@@ -25,7 +25,7 @@ A convenient way to make embeds responsive. Supports `16by9` and `4by3`.
 
 or
 
-```stylus
+```sass
 .embed-container {
   @extends $embed-responsive-4by3;
 }
@@ -39,7 +39,7 @@ or
 
 A convenient way to set font size, line-height, letter-spacing, and smoothing. Assumes a base font-size of 14. This can be reconfigured by setting the `$base-font-size` variable.
 
-```stylus
+```sass
 .foo {
   font-specs(16, 1.4, 100, true);
 }
@@ -62,7 +62,7 @@ Convenient vendor prefixes have been added for:
 
 A convenient way to make images responsive.
 
-```stylus
+```sass
 img {
   img-responsive();
 }
@@ -72,7 +72,7 @@ img {
 
 Makes an element only available to screen-readers, aiding in accessibility.
 
-```stylus
+```sass
 .help-text {
   sop-sr-only();
 }
@@ -88,7 +88,7 @@ Params:
 2. file root (optional, defaults to `/fonts/`)
 3. file name (optional, defaults to font-family name)
 
-```stylus
+```sass
 setup-font-face('fontello', '/assets/font/', 'fontello-alt')
 ```
 
@@ -98,7 +98,7 @@ Includes base fontello icon styling
 
 Has an optional boolean parameter for whether to include animation offset.
 
-```stylus
+```sass
 .icon:before
   fontello-icon()
   content '\e200'
@@ -106,7 +106,7 @@ Has an optional boolean parameter for whether to include animation offset.
 
 ## Viewport Filled and Fitted
 
-```stylus
+```sass
 .img
   viewport-filled(16, 9)
 
