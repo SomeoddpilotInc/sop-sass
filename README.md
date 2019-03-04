@@ -7,7 +7,7 @@ sop-sass
 
 Someoddpilot's base Sass framework
 
-Borrowed liberally from [Bootstrap](http://getbootstrap.com) and [Nib](https://github.com/tj/nib)
+Borrowed liberally from [Bootstrap](http://getbootstrap.com).
 
 ## Responsive Embeds
 
@@ -15,23 +15,19 @@ A convenient way to make embeds responsive. Supports `16by9` and `4by3`.
 
 ```sass
 .embed-container {
-  embed-responsive(16, 9);
+  @include embed-responsive(3, 2);
 }
 
-.embed-item {
-  embed-responsive-item();
-}
-```
-
-or
-
-```sass
 .embed-container {
-  @extends $embed-responsive-4by3;
+  @include embed-responsive-4by3;
+}
+
+.embed-container {
+  @include embed-responsive-16by9;
 }
 
 .embed-item {
-  @extends $embed-responsive-item;
+  @include embed-responsive-item;
 }
 ```
 
@@ -60,11 +56,11 @@ Convenient vendor prefixes have been added for:
 
 ## Responsive
 
-A convenient way to make images responsive.
+Convenient ways to make images responsive.
 
 ```sass
 img {
-  img-responsive();
+  @include img-responsive;
 }
 ```
 
@@ -74,7 +70,7 @@ Makes an element only available to screen-readers, aiding in accessibility.
 
 ```sass
 .help-text {
-  sop-sr-only();
+  @include sop-sr-only;
 }
 ```
 
@@ -89,7 +85,7 @@ Params:
 3. file name (optional, defaults to font-family name)
 
 ```sass
-setup-font-face('fontello', '/assets/font/', 'fontello-alt')
+@include setup-font-face('fontello', '/assets/font/', 'fontello-alt');
 ```
 
 ## Fontello
@@ -99,19 +95,22 @@ Includes base fontello icon styling
 Has an optional boolean parameter for whether to include animation offset.
 
 ```sass
-.icon:before
-  fontello-icon()
-  content '\e200'
+.icon:before {
+  @include fontello-icon();
+  content: '\e200';
+}
 ```
 
 ## Viewport Filled and Fitted
 
 ```sass
-.img
-  viewport-filled(16, 9)
+.img {
+  @include viewport-filled(16, 9);
+}
 
-.img--fit
-  viewport-fitted(16, 9)
+.img--fit {
+  @include viewport-fitted(16, 9);
+}
 ```
 
 # TODO
