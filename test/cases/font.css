@@ -1,12 +1,12 @@
 foo {
   font-size: 1em;
-  line-height: 0.12857em;
+  line-height: 1.8em;
   letter-spacing: 0.1em;
 }
 
 foo-sketch-tracking {
   font-size: 1em;
-  line-height: 0.12857em;
+  line-height: 1.8em;
   letter-spacing: 6.5em;
 }
 
@@ -16,15 +16,21 @@ foo-auto {
   letter-spacing: 0;
 }
 
+foo-percent {
+  font-size: 1.14286em;
+  line-height: 1.3em;
+  letter-spacing: 0;
+}
+
 foo-smooth {
   font-size: 1.14286em;
-  line-height: 1.2em;
+  line-height: 1.25em;
   letter-spacing: 0.1em;
   font-smoothing: antialiased;
 }
 
 foo-important-override {
   font-size: 1.14286em !important;
-  line-height: 1.2em !important;
+  line-height: 1.25em !important;
   letter-spacing: 0.1em !important;
 }

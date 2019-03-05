@@ -6,8 +6,12 @@ $base-font-size: if(variable-exists('base-font-size'), $base-font-size, 14);
     line-height: 0 $important;
   }
   @if $leading != null {
-    @if $leading == auto or $leading == 1.2em or $leading == 120% {
+    @if $leading == auto {
       line-height: 1.2em $important;
+    } @else if unit($leading) == 'em' {
+      line-height: $leading $important;
+    } @else if unit($leading) == '%' {
+      line-height: ($leading / 100%) + em $important;
     } @else {
       line-height: $leading / $size + em $important;
     }
@@ -15,12 +19,10 @@ $base-font-size: if(variable-exists('base-font-size'), $base-font-size, 14);
   @if $tracking != null {
     @if $tracking == 0 {
       letter-spacing: 0 $important;
+    } @else if unit($tracking) == 'px' {
+      letter-spacing: ($tracking / ($tracking * 0 + 1)) / $size + em $important;
     } @else {
-      @if unit($tracking) == 'px' {
-        letter-spacing: ($tracking / ($tracking * 0 + 1)) / $size + em $important;
-      } @else {
-        letter-spacing: $tracking / 1000 + em $important;
-      }
+      letter-spacing: $tracking / 1000 + em $important;
     }
   }
   @if $smoothed == 'smooth' or $smoothed == true {

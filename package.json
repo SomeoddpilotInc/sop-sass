@@ -29,7 +29,6 @@
   "devDependencies": {
     "connect": "3.x",
     "mocha": "^6.0.2",
-    "pug": "^2.0.3",
     "should": "*"
   }
 }

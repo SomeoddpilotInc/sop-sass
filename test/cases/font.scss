@@ -1,21 +1,25 @@
 @import "sop-sass/font";
 
 foo {
-  @include font-specs(14, 1.8, 100);
+  @include font-specs(14, 1.8em, 100);
 }
 
 foo-sketch-tracking {
-  @include font-specs(14, 1.8, 91px);
+  @include font-specs(14, 25.2, 91px);
 }
 
 foo-auto {
   @include font-specs(16, auto, 0);
 }
 
+foo-percent {
+  @include font-specs(16, 130%, 0);
+}
+
 foo-smooth {
-  @include font-specs(16, 1.2, 100, true);
+  @include font-specs(16, 1.25em, 100, true);
 }
 
 foo-important-override {
-  @include font-specs(16, 1.2, 100, false, !important);
+  @include font-specs(16, 20, 100, false, !important);
 }
