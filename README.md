@@ -4,6 +4,7 @@ sop-sass
 [![Build Status](https://travis-ci.org/SomeoddpilotInc/sop-sass.svg?branch=master)](https://travis-ci.org/SomeoddpilotInc/sop-sass)
 [![Dependency Status](https://david-dm.org/SomeoddpilotInc/sop-sass.svg)](https://david-dm.org/SomeoddpilotInc/sop-sass)
 [![devDependency Status](https://david-dm.org/SomeoddpilotInc/sop-sass/dev-status.svg)](https://david-dm.org/SomeoddpilotInc/sop-sass#info=devDependencies)
+
 [![forthebadge](https://forthebadge.com/images/badges/built-with-grammas-recipe.svg)](https://forthebadge.com)
 
 Someoddpilot's base Sass framework
