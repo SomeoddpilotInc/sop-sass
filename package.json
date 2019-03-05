@@ -11,7 +11,11 @@
     "url": "https://github.com/someoddpilotinc/sop-sass.git"
   },
   "keywords": [
-    "sass"
+    "sass",
+    "scss",
+    "css",
+    "styled",
+    "mixins"
   ],
   "author": "SOP Devs <dev@someoddpilot.com>",
   "license": "MIT",

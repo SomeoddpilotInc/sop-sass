@@ -1,9 +1,10 @@
 sop-sass
 ========
 
-[![Build Status](https://travis-ci.org/SomeoddpilotInc/sop-sass.svg?branch=master)](https://travis-ci.org/SomeoddpilotInc/sop-sass)
-[![Dependency Status](https://david-dm.org/SomeoddpilotInc/sop-sass.svg)](https://david-dm.org/SomeoddpilotInc/sop-sass)
-[![devDependency Status](https://david-dm.org/SomeoddpilotInc/sop-sass/dev-status.svg)](https://david-dm.org/SomeoddpilotInc/sop-sass#info=devDependencies)
+![Travis (.org)](https://img.shields.io/travis/SomeoddpilotInc/sop-sass.svg?style=for-the-badge)
+![David](https://img.shields.io/david/SomeoddpilotInc/sop-sass.svg?style=for-the-badge)
+![David](https://img.shields.io/david/dev/SomeoddpilotInc/sop-sass.svg?style=for-the-badge)
+![npm](https://img.shields.io/npm/v/sop-sass.svg?style=for-the-badge)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-grammas-recipe.svg)](https://forthebadge.com)
 
@@ -15,7 +16,7 @@ Borrowed liberally from [Bootstrap](http://getbootstrap.com).
 
 A convenient way to make embeds responsive. Supports `16by9` and `4by3`.
 
-```sass
+```scss
 .embed-container {
   @include embed-responsive(3, 2);
 }
@@ -37,7 +38,7 @@ A convenient way to make embeds responsive. Supports `16by9` and `4by3`.
 
 A convenient way to set font size, line-height, letter-spacing, and smoothing. Assumes a base font-size of 14. This can be reconfigured by setting the `$base-font-size` variable.
 
-```sass
+```scss
 .foo {
   @include font-specs(16, 22, 100, true);
 }
@@ -60,7 +61,7 @@ Convenient vendor prefixes have been added for:
 
 Convenient ways to make images responsive.
 
-```sass
+```scss
 img {
   @include img-responsive;
 }
@@ -70,7 +71,7 @@ img {
 
 Makes an element only available to screen-readers, aiding in accessibility.
 
-```sass
+```scss
 .help-text {
   @include sop-sr-only;
 }
@@ -86,7 +87,7 @@ Params:
 2. file root (optional, defaults to `/fonts/`)
 3. file name (optional, defaults to font-family name)
 
-```sass
+```scss
 @include setup-font-face('fontello', '/assets/font/', 'fontello-alt');
 ```
 
@@ -96,7 +97,7 @@ Includes base fontello icon styling
 
 Has an optional boolean parameter for whether to include animation offset.
 
-```sass
+```scss
 .icon:before {
   @include fontello-icon();
   content: '\e200';
@@ -105,7 +106,7 @@ Has an optional boolean parameter for whether to include animation offset.
 
 ## Viewport Filled and Fitted
 
-```sass
+```scss
 .img {
   @include viewport-filled(16, 9);
 }
