@@ -1,4 +1,4 @@
-$base-font-size: if($base-font-size, $base-font-size, 14);
+$base-font-size: if(variable-exists('base-font-size'), $base-font-size, 14);
 
 @mixin font-specs($size, $leading: null, $tracking: null, $smoothed: false, $important: null) {
   font-size: $size / $base-font-size + em $important;
