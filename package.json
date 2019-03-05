@@ -1,6 +1,6 @@
 {
   "name": "sop-sass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Someoddpilot's base Sass framework",
   "main": "lib/sop-sass/index.scss",
   "scripts": {
