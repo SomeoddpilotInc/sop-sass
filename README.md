@@ -39,7 +39,7 @@ A convenient way to set font size, line-height, letter-spacing, and smoothing. A
 
 ```sass
 .foo {
-  @include font-specs(16, 1.4, 100, true);
+  @include font-specs(16, 22, 100, true);
 }
 ```
 
